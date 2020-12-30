@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/value_12"
+    tools:context=".widgets.RegisterAccountFragment"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_find_caller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_layout"
+        android:elevation="@dimen/value_4dp"
+        android:orientation="vertical"
+        android:padding="@dimen/value_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.30">
+
+        <EditText
+            android:id="@+id/tv_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text_view"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/value_8"
+            android:ems="10"
+            android:hint="Email id"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/value_8"
+            android:textColor="@color/accentColor"
+            android:textSize="@dimen/text_value_14" />
+
+        <EditText
+            android:id="@+id/tv_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_12"
+            android:background="@drawable/bg_text_view"
+            android:drawableStart="@drawable/ic_otp"
+            android:drawablePadding="@dimen/value_8"
+            android:ems="10"
+            android:hint="Enter OTP"
+            android:visibility="gone"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="@dimen/value_8"
+            android:textColor="@color/accentColor"
+            android:textSize="@dimen/text_value_14" />
+
+        <EditText
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_12"
+            android:background="@drawable/bg_text_view"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="@dimen/value_8"
+            android:ems="10"
+            android:hint="User Name"
+            android:visibility="gone"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/value_8"
+            android:textColor="@color/accentColor"
+            android:textSize="@dimen/text_value_14" />
+
+        <EditText
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_12"
+            android:background="@drawable/bg_text_view"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/value_8"
+            android:ems="10"
+            android:visibility="gone"
+            android:hint="Password"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:padding="@dimen/value_8"
+            android:textColor="@color/accentColor"
+            android:textSize="@dimen/text_value_14" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_16"
+            android:background="@drawable/bg_btn"
+            android:text="Get OTP"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_value_18" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Error Message"
+        android:textColor="@color/colorError"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintBottom_toTopOf="@+id/tv_have_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tv_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="I have already account! Login"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorWarning"
+        app:layout_constraintBottom_toTopOf="@+id/tv_error_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/account_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_verify" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="@dimen/value_2"
+            android:text="Account Verified"
+            android:textColor="#47FF00"
+            android:textSize="@dimen/text_value_16" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

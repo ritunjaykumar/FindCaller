@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_layout"
+    android:padding="@dimen/value_8"
+    tools:layout_editor_absoluteX="30dp"
+    tools:layout_editor_absoluteY="306dp">
+
+    <TextView
+        android:id="@+id/tv_id_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/student"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toStartOf="@+id/tv_id_2"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_id_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/doctor"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toStartOf="@+id/tv_id_3"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_1"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_1" />
+
+    <TextView
+        android:id="@+id/tv_id_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_2" />
+
+    <TextView
+        android:id="@+id/tv_id_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/actor"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toStartOf="@+id/tv_id_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_1" />
+
+    <TextView
+        android:id="@+id/tv_id_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gov_job"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toStartOf="@+id/tv_id_9"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_4"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_4" />
+
+    <TextView
+        android:id="@+id/tv_id_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/leader"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toStartOf="@+id/tv_id_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_4" />
+
+    <TextView
+        android:id="@+id/tv_id_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="@string/finance"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toStartOf="@+id/tv_id_8"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_6"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_6" />
+
+    <TextView
+        android:id="@+id/tv_id_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/others"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_7"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_6" />
+
+    <TextView
+        android:id="@+id/tv_id_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/value_8"
+        android:text="@string/nursing"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_5"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_5" />
+
+    <EditText
+        android:id="@+id/et_others"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_16"
+        android:layout_marginTop="@dimen/value_8"
+        android:layout_marginEnd="@dimen/value_16"
+        android:layout_marginBottom="@dimen/value_8"
+        android:autofillHints=""
+        android:background="@drawable/bg_text_view"
+        android:ems="10"
+        android:hint="@string/others"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/value_4"
+        android:paddingTop="@dimen/value_4"
+        android:paddingEnd="42dp"
+        android:paddingBottom="@dimen/value_4"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_value_16"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_7" />
+
+    <ImageButton
+        android:id="@+id/btn_save"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/et_others"
+        app:layout_constraintEnd_toEndOf="@+id/et_others"
+        app:layout_constraintTop_toTopOf="@+id/et_others"
+        app:srcCompat="@drawable/ic_send"
+        android:contentDescription="@string/app_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

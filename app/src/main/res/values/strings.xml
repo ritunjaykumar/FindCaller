@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FindCaller</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="block">Block</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="copy_name">Copy Name</string>
+    <string name="copy_number">Copy Number</string>
+    <string name="remove_contact">Remove Contact</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="remove_to_favorite">remove to Favorite</string>
+    <string name="copy">copy</string>
+    <string name="student">Student</string>
+    <string name="doctor">Doctor</string>
+    <string name="teacher">Teacher</string>
+    <string name="actor">Actor</string>
+    <string name="gov_job">Gov Job</string>
+    <string name="finance">Finance</string>
+    <string name="leader">Leader</string>
+    <string name="nursing">Nursing</string>
+    <string name="others">Others</string>
+    <string name="edit_name">edit name</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/block"
+        android:icon="@drawable/ic_block"
+        android:title="@string/block"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/edit"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:icon="@drawable/ic_copy"
+        android:title="@string/copy"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/copy_name"
+                android:icon="@drawable/ic_copy"
+                android:title="@string/copy_name"
+                app:showAsAction="collapseActionView" />
+            <item
+                android:id="@+id/copy_number"
+                android:icon="@drawable/ic_copy"
+                android:title="@string/copy_number"
+                app:showAsAction="collapseActionView" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/remove_contact"
+        android:icon="@drawable/ic_remove"
+        android:title="@string/remove_contact"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/add_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/add_to_favorite"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/remove_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/remove_to_favorite"
+        app:showAsAction="collapseActionView" />
+</menu>
